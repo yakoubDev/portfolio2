@@ -1,26 +1,56 @@
 @import "tailwindcss";
 
+*{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 60px;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background-start: #0f0f0f;
+  --background-end: #1c1c1e;
+  --foreground: #fafafa;
+  --accent: #00d3f2;
+   --accent-secondary: #00d4aa; /* Darker cyan for gradients */
+  --cta: #1e61c4;
+  --muted: #a1a1aa;
+  --border: #404040;
 }
-
 @theme inline {
-  --color-background: var(--background);
+  --color-accent: var(--accent);
+  --color-cta: var(--cta);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-space: var(--font-space);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+
+
+body {
+  color: var(--foreground);
+  font-family: var(--font-space), Arial, Helvetica, sans-serif;
+}
+
+
+@layer base {
+  body {
+    @apply px-2 py-2 md:px-6 xl:px-12 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+ .h1{
+  @apply text-6xl lg:text-7xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent leading-tight;
+ }
+
+ .button{
+  @apply bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:from-cyan-600 hover:to-blue-700 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-2xl hover:shadow-cyan-500/25 flex items-center justify-center cursor-pointer;
+ }
+
+ .bg-gradient{
+  @apply bg-gradient-to-r from-cyan-500 to-blue-600;
+ }
+
+  .hover-gradient {
+    @apply hover:bg-gradient-to-r hover:from-cyan-500 hover:to-blue-600;
+  }
 }
