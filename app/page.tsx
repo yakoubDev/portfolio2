@@ -31,15 +31,15 @@ const Home = () => {
   return (
     <main className="min-h-screen text-white relative overflow-hidden">
       {/* Main content */}
-      <div className="relative z-10 container mx-auto py-12">
+      <div className="relative z-10 container mx-auto py-2 lg:py-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
           {/* Left side - Content */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="text-6xl lg:text-7xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent leading-tight">
+              <h1 className="text-5xl lg:text-7xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent leading-tight">
                 Yakoub Dev<span className="text-white">.</span>
               </h1>
-              <div className="text-xl font-semibold">
+              <div className="text-lg lg:text-xl font-semibold">
                 Software Engineer <span className="text-accent">&</span> Web
                 Developer
               </div>

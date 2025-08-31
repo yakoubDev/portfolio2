@@ -33,7 +33,7 @@ body {
 
 @layer base {
   body {
-    @apply px-2 py-2 md:px-6 xl:px-12 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900
+    @apply px-3 py-2 md:px-6 xl:px-12 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900
   }
 }
 
