@@ -152,7 +152,7 @@ const About = () => {
                   {index !== timeline.length - 1 && (
                     <div className="absolute left-1.5 top-5 w-0.5 h-16 bg-gradient-to-b from-cyan-400/50 to-transparent"></div>
                   )}
-                  <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-lg p-6 hover:border-cyan-400/30 transition-all duration-300 hover:transform hover:-translate-y-1">
+                  <div className="bg-gray-800/50 border border-gray-700 rounded-lg p-6 hover:border-cyan-400/30 transition-all duration-300 hover:transform hover:-translate-y-1">
                     <div className="text-cyan-400 font-semibold mb-2">
                       {item.year}
                     </div>
@@ -179,7 +179,7 @@ const About = () => {
             {skillCategories.map((category, categoryIndex) => (
               <div
                 key={categoryIndex}
-                className="bg-gray-800/40 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-8 hover:border-cyan-400/30 transition-all duration-500 hover:transform hover:-translate-y-2 group relative overflow-hidden"
+                className="bg-gray-800/40 border border-gray-700/50 rounded-2xl p-8 hover:border-cyan-400/30 transition-all duration-500 hover:transform hover:-translate-y-2 group relative overflow-hidden"
               >
                 {/* Background gradient overlay */}
                 <div
@@ -288,19 +288,19 @@ const About = () => {
 
         {/* Stats Section */}
         <div className="grid md:grid-cols-3 gap-8 text-center">
-          <div className="bg-gray-800/30 backdrop-blur-sm border border-gray-700 rounded-xl p-8 hover:border-cyan-400/30 transition-all duration-300">
+          <div className="bg-gray-800/30 border border-gray-700 rounded-xl p-8 hover:border-cyan-400/30 transition-all duration-300">
             <div className="text-4xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent mb-2">
               2024
             </div>
             <p className="text-gray-400">Graduated</p>
           </div>
-          <div className="bg-gray-800/30 backdrop-blur-sm border border-gray-700 rounded-xl p-8 hover:border-cyan-400/30 transition-all duration-300">
+          <div className="bg-gray-800/30 border border-gray-700 rounded-xl p-8 hover:border-cyan-400/30 transition-all duration-300">
             <div className="text-4xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent mb-2">
               10+
             </div>
             <p className="text-gray-400">Technologies</p>
           </div>
-          <div className="bg-gray-800/30 backdrop-blur-sm border border-gray-700 rounded-xl p-8 hover:border-cyan-400/30 transition-all duration-300">
+          <div className="bg-gray-800/30 border border-gray-700 rounded-xl p-8 hover:border-cyan-400/30 transition-all duration-300">
             <div className="text-4xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent mb-2">
               100%
             </div>

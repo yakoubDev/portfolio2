@@ -4,7 +4,7 @@ import React from "react";
 
 // Reusable Card component matching your theme
 const Card = ({ children, className = "", hover = true } : {children: any, className: string, hover?: boolean}) => {
-  const baseClasses = "bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm rounded-xl border border-gray-700/50 transition-all duration-300";
+  const baseClasses = "bg-gradient-to-br from-gray-800/50 to-gray-900/50 rounded-xl border border-gray-700/50 transition-all duration-300";
   const hoverClasses = hover ? "hover:border-cyan-400/50 hover:shadow-xl hover:shadow-cyan-400/10 hover:-translate-y-1" : "";
   
   return (

@@ -114,14 +114,14 @@ const Work = () => {
               onMouseLeave={() => setHoveredProject(null)}
             >
               {/* Project Card */}
-              <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-2xl overflow-hidden transition-all duration-500 hover:border-cyan-500/50 hover:shadow-2xl hover:shadow-cyan-500/10 hover:-translate-y-2">
+              <div className="bg-gray-800/50 border border-gray-700/50 rounded-2xl overflow-hidden transition-all duration-500 hover:border-cyan-500/50 hover:shadow-2xl hover:shadow-cyan-500/10 hover:-translate-y-2">
                 {/* Project Image */}
                 <div className="relative h-64 md:h-72 overflow-hidden bg-gradient-to-br from-gray-700 to-gray-800">
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 via-transparent to-transparent z-10" />
 
                   {/* Project Number Badge */}
                   <div className="absolute top-4 left-4 z-20">
-                    <span className="inline-flex items-center justify-center w-12 h-12 bg-cyan-500/20 backdrop-blur-sm border border-cyan-500/30 rounded-full text-cyan-400 font-bold text-lg">
+                    <span className="inline-flex items-center justify-center w-12 h-12 bg-cyan-500/20 border border-cyan-500/30 rounded-full text-cyan-400 font-bold text-lg">
                       {project.num}
                     </span>
                   </div>
@@ -203,7 +203,7 @@ const Work = () => {
 
         {/* View More Section */}
         {/* <div className="text-center mt-16">
-          <div className="inline-flex items-center gap-3 px-8 py-4 bg-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-xl hover:border-cyan-500/50 transition-all duration-300 cursor-pointer group">
+          <div className="inline-flex items-center gap-3 px-8 py-4 bg-gray-800/30 border border-gray-700/50 rounded-xl hover:border-cyan-500/50 transition-all duration-300 cursor-pointer group">
             <span className="text-gray-300 font-medium group-hover:text-cyan-400 transition-colors duration-300">
               View All Projects
             </span>
@@ -235,7 +235,7 @@ const Work = () => {
 
         {/* Call to Action */}
         <div className="text-center mt-20">
-          <div className="bg-gradient-to-r from-gray-800/50 to-gray-700/50 backdrop-blur-sm border border-gray-600/50 rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
+          <div className="bg-gradient-to-r from-gray-800/50 to-gray-700/50 border border-gray-600/50 rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Ready to Start Your Next Project?
             </h2>

@@ -59,7 +59,7 @@ const Home = () => {
                 {skills.map((skill, index) => (
                   <span
                     key={index}
-                    className="px-4 py-2 bg-white/20 backdrop-blur-lg rounded-full text-sm font-medium border border-white/20 hover:bg-white/10 transition-all duration-300"
+                    className="px-4 py-2 bg-white/20 rounded-full text-sm font-medium border border-white/20 hover:bg-white/10 transition-all duration-300"
                   >
                     {skill}
                   </span>
@@ -104,21 +104,21 @@ const Home = () => {
               <a
                 href="https://github.com/yakoubDev"
                 target="_blank"
-                className="w-12 h-12 bg-white/10 backdrop-blur-lg rounded-lg flex items-center justify-center hover:bg-white/20 transition-all duration-300 hover:-translate-y-1 border border-white/20"
+                className="w-12 h-12 bg-white/10  rounded-lg flex items-center justify-center hover:bg-white/20 transition-all duration-300 hover:-translate-y-1 border border-white/20"
               >
                 <Github className="w-5 h-5" />
               </a>
               <a
                 href="https://www.linkedin.com/in/ahcene-tayebi-b8546130b/"
                 target="_blank"
-                className="w-12 h-12 bg-white/10 backdrop-blur-lg rounded-lg flex items-center justify-center hover:bg-white/20 transition-all duration-300 hover:-translate-y-1 border border-white/20"
+                className="w-12 h-12 bg-white/10  rounded-lg flex items-center justify-center hover:bg-white/20 transition-all duration-300 hover:-translate-y-1 border border-white/20"
               >
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
                 href="https://mail.google.com/mail/u/1/#inbox?compose=DmwnWrRmVGbzkgnmkVdpDcLljcsHtJkkXvhgRWWLqfQcsnPqjfHpTCNNgPTcCTCZWDFSGNZZpqXb"
                 target="_blank"
-                className="w-12 h-12 bg-white/10 backdrop-blur-lg rounded-lg flex items-center justify-center hover:bg-white/20 transition-all duration-300 hover:-translate-y-1 border border-white/20"
+                className="w-12 h-12 bg-white/10  rounded-lg flex items-center justify-center hover:bg-white/20 transition-all duration-300 hover:-translate-y-1 border border-white/20"
               >
                 <Mail className="w-5 h-5" />
               </a>
@@ -133,7 +133,7 @@ const Home = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-3xl transform -rotate-6"></div>
 
               {/* Photo container */}
-              <div className="relative bg-white/10 backdrop-blur-lg rounded-3xl p-8 border border-white/20">
+              <div className="relative bg-white/10 rounded-3xl p-8 border border-white/20">
                 {/* Replace this div with your actual image */}
                 <div className="aspect-[4/5] bg-gradient-to-br from-gray-700 to-gray-800 rounded-2xl flex items-center justify-center text-gray-400">
                   <img
@@ -145,10 +145,10 @@ const Home = () => {
               </div>
 
               {/* Floating elements */}
-              <div className="absolute -top-4 -left-4 w-16 h-16 bg-cyan-400/20 rounded-full flex items-center justify-center backdrop-blur-lg border border-cyan-400/30">
+              <div className="absolute -top-4 -left-4 w-16 h-16 bg-cyan-400/20 rounded-full flex items-center justify-center border border-cyan-400/30">
                 <Globe className="w-8 h-8 text-cyan-400" />
               </div>
-              <div className="absolute -bottom-4 -right-4 w-16 h-16 bg-blue-500/20 rounded-full flex items-center justify-center backdrop-blur-lg border border-blue-500/30">
+              <div className="absolute -bottom-4 -right-4 w-16 h-16 bg-blue-500/20 rounded-full flex items-center justify-center border border-blue-500/30">
                 <Database className="w-8 h-8 text-blue-400" />
               </div>
             </div>
