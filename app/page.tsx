@@ -40,7 +40,8 @@ const Home = () => {
                 Yakoub Dev<span className="text-white">.</span>
               </h1>
               <div className="text-xl font-semibold">
-                Software Engineer <span className="text-accent">&</span> Web Developer
+                Software Engineer <span className="text-accent">&</span> Web
+                Developer
               </div>
               <p className="text-lg text-gray-300 leading-relaxed max-w-lg">
                 Crafting digital experiences with modern technologies. I build
@@ -101,19 +102,22 @@ const Home = () => {
             {/* Social Links */}
             <div className="flex gap-4 pt-4">
               <a
-                href="#"
+                href="https://github.com/yakoubDev"
+                target="_blank"
                 className="w-12 h-12 bg-white/10 backdrop-blur-lg rounded-lg flex items-center justify-center hover:bg-white/20 transition-all duration-300 hover:-translate-y-1 border border-white/20"
               >
                 <Github className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/ahcene-tayebi-b8546130b/"
+                target="_blank"
                 className="w-12 h-12 bg-white/10 backdrop-blur-lg rounded-lg flex items-center justify-center hover:bg-white/20 transition-all duration-300 hover:-translate-y-1 border border-white/20"
               >
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://mail.google.com/mail/u/1/#inbox?compose=DmwnWrRmVGbzkgnmkVdpDcLljcsHtJkkXvhgRWWLqfQcsnPqjfHpTCNNgPTcCTCZWDFSGNZZpqXb"
+                target="_blank"
                 className="w-12 h-12 bg-white/10 backdrop-blur-lg rounded-lg flex items-center justify-center hover:bg-white/20 transition-all duration-300 hover:-translate-y-1 border border-white/20"
               >
                 <Mail className="w-5 h-5" />
@@ -132,13 +136,11 @@ const Home = () => {
               <div className="relative bg-white/10 backdrop-blur-lg rounded-3xl p-8 border border-white/20">
                 {/* Replace this div with your actual image */}
                 <div className="aspect-[4/5] bg-gradient-to-br from-gray-700 to-gray-800 rounded-2xl flex items-center justify-center text-gray-400">
-                  {/* Placeholder - replace with: <img src="your-photo.jpg" alt="Yakoub Dev" className="w-full h-full object-cover rounded-2xl" /> */}
-                  <div className="text-center">
-                    <div className="w-24 h-24 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-full mx-auto mb-4 flex items-center justify-center">
-                      <Code className="w-12 h-12 text-white" />
-                    </div>
-                    <p className="text-sm">Replace with your photo</p>
-                  </div>
+                  <img
+                    src="/assets/my-pic.jpg"
+                    alt="Yakoub Dev"
+                    className="w-full h-full object-cover rounded-2xl"
+                  />
                 </div>
               </div>
 

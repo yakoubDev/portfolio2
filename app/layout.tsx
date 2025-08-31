@@ -3,6 +3,7 @@ import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Nav from "./Components/Nav";
 import Footer from "./Components/Footer";
+import { Toaster } from "sonner";
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space",
@@ -34,6 +35,7 @@ export default function RootLayout({
           {children}
         </div>
         <Footer />
+        <Toaster position="bottom-right" richColors />
       </body>
     </html>
   );
