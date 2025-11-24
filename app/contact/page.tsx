@@ -186,7 +186,9 @@ const Contact = () => {
                 <label className="block text-sm font-semibold text-gray-300 mb-2 uppercase tracking-wider">
                   Phone Number
                 </label>
-                <div className="relative">
+                <div
+                  className={`relative  border border-gray-600/50 focus-within:bg-gray-700/70 focus-within:border-cyan-500/50  rounded-lg `}
+                >
                   <PhoneInput
                     placeholder="Enter phone number"
                     value={formData.phone || ""}
@@ -195,7 +197,7 @@ const Contact = () => {
                     }
                     defaultCountry="DZ"
                     international
-                    className="w-full pl-4 pr-4 py-4 bg-gray-700/50 border border-gray-600/50 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-cyan-500/50 focus:bg-gray-700/70 transition-all duration-300"
+                    className={`w-full pl-4 pr-4 py-4 bg-gray-700/50  rounded-lg text-white placeholder-gray-400  transition-all duration-300 `}
                     numberInputProps={{
                       className: "outline-none",
                     }}
