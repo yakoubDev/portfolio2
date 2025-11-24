@@ -12,6 +12,8 @@ import {
   Globe,
 } from "lucide-react";
 import { toast } from "sonner";
+import PhoneInput, { isValidPhoneNumber } from "react-phone-number-input";
+import "react-phone-number-input/style.css";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -21,7 +23,7 @@ const Contact = () => {
     service: "",
     description: "",
   });
-  const [loading,setLaoding] = useState<boolean>(false);
+  const [loading, setLaoding] = useState<boolean>(false);
   const [focusedField, setFocusedField] = useState("");
 
   const handleInputChange = (
@@ -48,6 +50,11 @@ const Contact = () => {
       ) {
         return toast.error("Please fill out the fields");
       }
+
+      if (!formData.phone || !isValidPhoneNumber(formData.phone)) {
+        return toast.error("Please enter a valid phone number");
+      }
+
       setLaoding(true);
       const response = await fetch("/api/send-order", {
         method: "POST",
@@ -63,10 +70,17 @@ const Contact = () => {
 
       const result = await response.json();
       toast.success(result.message);
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        service: "",
+        description: "",
+      });
     } catch (error) {
       console.log(error);
       toast.error("Server error..., please try again");
-    }finally{
+    } finally {
       setLaoding(false);
     }
   };
@@ -82,7 +96,7 @@ const Contact = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 pb-12">
+    <div className="min-h-screen pb-12">
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-16">
@@ -102,7 +116,10 @@ const Contact = () => {
 
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Form */}
-          <form onSubmit={handleSubmit} className="bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-8 md:p-10">
+          <form
+            onSubmit={handleSubmit}
+            className="bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-8 md:p-10"
+          >
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-8">
               Send Me a Message
             </h2>
@@ -170,23 +187,23 @@ const Contact = () => {
                   Phone Number
                 </label>
                 <div className="relative">
-                  <Phone
-                    size={20}
-                    className={`absolute left-4 top-1/2 transform -translate-y-1/2 transition-colors duration-300 ${
-                      focusedField === "phone"
-                        ? "text-cyan-400"
-                        : "text-gray-500"
-                    }`}
-                  />
-                  <input
-                    type="tel"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleInputChange}
+                  <PhoneInput
+                    placeholder="Enter phone number"
+                    value={formData.phone || ""}
+                    onChange={(value) =>
+                      setFormData((prev) => ({ ...prev, phone: value || "" }))
+                    }
+                    defaultCountry="DZ"
+                    international
+                    className="w-full pl-4 pr-4 py-4 bg-gray-700/50 border border-gray-600/50 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-cyan-500/50 focus:bg-gray-700/70 transition-all duration-300"
+                    numberInputProps={{
+                      className: "outline-none",
+                    }}
+                    countrySelectProps={{
+                      className: "bg-gray-900",
+                    }}
                     onFocus={() => setFocusedField("phone")}
                     onBlur={() => setFocusedField("")}
-                    className="w-full pl-12 pr-4 py-4 bg-gray-700/50 border border-gray-600/50 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-cyan-500/50 focus:bg-gray-700/70 transition-all duration-300"
-                    placeholder="+1 (555) 123-4567"
                   />
                 </div>
               </div>

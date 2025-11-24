@@ -54,11 +54,27 @@ const projects = [
       { name: "MongoDB" },
       { name: "Cloudinary" },
     ],
-    image: "/assets/work/tm-store/tm_store_landing.jpg",
+    image: "/assets/work/tm-store/Hero.jpg",
     live: "https://tm-store.vercel.app/",
   },
-    {
+  {
     num: "04",
+    category: "Full Stack",
+    title: "Zidni Acedemy",
+    description: "E-learning platform helping muslims learn Quran and religion",
+    stack: [
+      { name: "Next.js" },
+      { name: "Tailwind CSS" },
+      { name: "TypeScript" },
+      { name: "Express.js" },
+      { name: "MongoDB" },
+      { name: "Stream.io" },
+    ],
+    image: "/assets/work/Zidni/Hero.jpg",
+    live: "https://zidniacademy.vercel.app/",
+  },
+  {
+    num: "05",
     category: "Full Stack",
     title: "Easy-Foot (In-Progress)",
     description:
@@ -76,7 +92,7 @@ const projects = [
     live: "https://easyfoot.vercel.app/",
   },
   {
-    num: "04",
+    num: "06",
     category: "Frontend",
     title: "EasyDocs (Front-End)",
     description: "EasyDocs made requesting civil documents online easier.",
@@ -201,23 +217,10 @@ const Work = () => {
           ))}
         </div>
 
-        {/* View More Section */}
-        {/* <div className="text-center mt-16">
-          <div className="inline-flex items-center gap-3 px-8 py-4 bg-gray-800/30 border border-gray-700/50 rounded-xl hover:border-cyan-500/50 transition-all duration-300 cursor-pointer group">
-            <span className="text-gray-300 font-medium group-hover:text-cyan-400 transition-colors duration-300">
-              View All Projects
-            </span>
-            <ChevronRight 
-              size={20} 
-              className="text-cyan-400 transform group-hover:translate-x-1 transition-transform duration-300" 
-            />
-          </div>
-        </div> */}
-
         {/* Stats Section */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-20 pt-12 border-t border-gray-700/50">
           {[
-            { label: "Projects Completed", value: "5+" },
+            { label: "Projects Completed", value: "6+" },
             { label: "Technologies Used", value: "12+" },
             { label: "Years of experience", value: "3+" },
             { label: "Code Commits", value: "300+" },
