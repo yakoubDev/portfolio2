@@ -69,12 +69,30 @@ const projects = [
       { name: "Express.js" },
       { name: "MongoDB" },
       { name: "Stream.io" },
+      { name: "Chargily" },
     ],
     image: "/assets/work/Zidni/Hero.jpg",
     live: "https://zidniacademy.vercel.app/",
   },
   {
     num: "05",
+    category: "Full Stack",
+    title: "Talkini (Real-Time Chat)",
+    description: "Real time chat app",
+    stack: [
+      { name: "Next.js" },
+      { name: "Tailwind CSS" },
+      { name: "TypeScript" },
+      { name: "Express.js" },
+      { name: "MongoDB" },
+      { name: "Socket.io" },
+      { name: "Redis" },
+    ],
+    image: "/assets/work/Talkini/Hero.jpg",
+    live: "https://talkini.vercel.app/",
+  },
+  {
+    num: "06",
     category: "Full Stack",
     title: "Easy-Foot (In-Progress)",
     description:
@@ -90,15 +108,6 @@ const projects = [
     ],
     image: "/assets/work/EasyFoot/Hero.jpg",
     live: "https://easyfoot.vercel.app/",
-  },
-  {
-    num: "06",
-    category: "Frontend",
-    title: "EasyDocs (Front-End)",
-    description: "EasyDocs made requesting civil documents online easier.",
-    stack: [{ name: "NextJs" }, { name: "Tailwind" }],
-    image: "/assets/work/EasyDocs/easydocs.png",
-    live: "https://easydocs-nu.vercel.app/",
   },
 ];
 
